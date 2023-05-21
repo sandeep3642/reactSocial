@@ -5,7 +5,7 @@ import Main from "../Main/Main";
 const Home = () => {
   return (
     <div className="w-full">
-      <div className="fixed top-0 z-10 w-full bg-gray">
+      <div className="fixed top-0 z-10 w-full bg-white">
         <Navbar></Navbar>
       </div>
   
