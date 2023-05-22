@@ -8,7 +8,6 @@ import React, {
 import { Avatar } from "@material-tailwind/react";
 import avatar from "../../assets/images/avatar.jpg";
 import { Button } from "@material-tailwind/react";
-import live from "../../assets/images/live.png";
 import smile from "../../assets/images/smile.png";
 import addImage from "../../assets/images/add-image.png";
 import { AuthContext } from "../AppContext/AppContext";
@@ -211,12 +210,6 @@ const Main = () => {
               </Button>
             )}
           </div>
-          {/* <div className="flex items-center">
-            <img className="h-10 mr-4" src={live} alt="live"></img>
-            <p className="font-roboto font-medium text-md text-gray-700 no-underline tracking-normal leading-none">
-              Live
-            </p>
-          </div> */}
           <div className="flex items-center">
             <img className="h-10 mr-4" src={smile} alt="feeling"></img>
             <p className="font-roboto font-medium text-md text-gray-700 no-underline tracking-normal leading-none">
@@ -234,7 +227,7 @@ const Main = () => {
           </div>
         ) : (
           <div>
-            {state?.posts?.length > 0 &&
+            {
               state?.posts?.map((post, index) => {
                 return (
                   <PostCard
